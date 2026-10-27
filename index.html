@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Global Fuel Prices and Taxation Trends | Jaisal Gohar</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+:root{--green:#146c43;--dark:#0b3d2e;--bg:#f5f8f6}
+body{margin:0;background:var(--bg);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:#1f2937;line-height:1.6}
+.navbar,footer{background:var(--dark);color:white}.navbar-brand{font-weight:750;color:white}.nav-link{color:#e5f3e9}
+.hero{background:linear-gradient(130deg,#0b3d2e,#146c43,#2b8a5b);color:white;padding:4.5rem 0}
+.hero h1{font-weight:800;font-size:clamp(2rem,5vw,3.5rem);line-height:1.15}.hero p{max-width:800px;color:#effaf2}
+section{padding:3.5rem 0}.heading{font-weight:800;color:var(--dark)}.muted{color:#64748b}
+.card-lite,.viz-card{background:white;border:1px solid #e1e9e3;border-radius:16px;box-shadow:0 8px 25px #0b3d2e0d}
+.card-lite{padding:1.4rem;height:100%}.card-lite h3{font-size:1.1rem;color:var(--green);font-weight:750}
+.viz-card{padding:1rem;overflow:hidden}.viz-frame{display:block;width:100%;height:850px;border:0;background:white}
+.viz-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1rem}.btn-green{background:var(--green);color:white}.btn-green:hover{background:var(--dark);color:white}
+footer{padding:1.5rem 0}
+.hero-stat{height:100%;padding:1rem;border:1px solid #ffffff40;background:#ffffff12;border-radius:14px}
+.hero-stat strong,.hero-stat span{display:block}.hero-stat strong{font-size:1.1rem}.hero-stat span{font-size:.9rem;color:#e1f3e7}
+.section-intro{max-width:850px}.number-pill{display:inline-flex;align-items:center;justify-content:center;width:2.3rem;height:2.3rem;border-radius:50%;background:#e4f3e9;color:var(--green);font-weight:800;margin-bottom:.8rem}
+.callout{border-left:4px solid var(--green);padding:1rem 1.25rem;background:#eaf5ee;border-radius:0 12px 12px 0}
+.back-top{position:fixed;right:1rem;bottom:1rem;z-index:1000;border-radius:50%;width:46px;height:46px;box-shadow:0 5px 18px #0002}
+@media(max-width:767px){.hero{padding:3rem 0}.viz-frame{height:650px}section{padding:2.5rem 0}.viz-card{padding:.5rem}}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+<div class="container"><a class="navbar-brand" href="#top">Fuel Trends 2020–2026</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="nav"><ul class="navbar-nav ms-auto"><li class="nav-item"><a class="nav-link" href="#overview">Overview</a></li><li class="nav-item"><a class="nav-link" href="#objectives">Objectives</a></li><li class="nav-item"><a class="nav-link" href="#methodology">Methodology</a></li><li class="nav-item"><a class="nav-link" href="#dashboard">Dashboard</a></li><li class="nav-item"><a class="nav-link" href="#story">Story</a></li><li class="nav-item"><a class="nav-link" href="#insights">Insights</a></li><li class="nav-item"><a class="nav-link" href="#limitations">Limitations</a></li></ul></div></div>
+</nav>
+<header class="hero" id="top"><div class="container">
+<p class="text-uppercase fw-semibold mb-2">Interactive Data Analytics Project</p>
+<h1>Global Fuel Prices and<br class="d-none d-md-block"> Taxation Trends</h1>
+<p class="mt-3">Explore fuel-price patterns, country comparisons, and taxation measures from 2020 to 2026 through a Tableau dashboard and story.</p>
+<p class="mb-0"><strong>Presented by Jaisal Gohar</strong></p>
+<div class="mt-4 d-flex flex-wrap gap-2"><a class="btn btn-light btn-lg" href="#overview">Explore the project</a><a class="btn btn-outline-light btn-lg" href="#dashboard">View dashboard</a></div>
+<div class="row g-3 mt-4">
+<div class="col-6 col-lg-3"><div class="hero-stat"><strong>2020–2026</strong><span>Analysis period</span></div></div>
+<div class="col-6 col-lg-3"><div class="hero-stat"><strong>Country-wise</strong><span>Comparisons</span></div></div>
+<div class="col-6 col-lg-3"><div class="hero-stat"><strong>Tableau</strong><span>Interactive visuals</span></div></div>
+<div class="col-6 col-lg-3"><div class="hero-stat"><strong>Web-based</strong><span>Project presentation</span></div></div></div>
+</div></header>
+<main>
+<section id="overview"><div class="container">
+<h2 class="heading">Project Overview</h2>
+<p class="muted mb-4">This project visualizes the available fuel-price and taxation information to make comparisons across countries and over time easier to explore.</p>
+<div class="row g-3">
+<div class="col-md-4"><div class="card-lite"><h3>Problem Statement</h3><p class="mb-0">Fuel-price and taxation data can be difficult to compare when it is spread across different sources or displayed in large tables. Interactive visuals help organize the information.</p></div></div>
+<div class="col-md-4"><div class="card-lite"><h3>Objectives</h3><p class="mb-0">Explore fuel prices, compare countries and regions, and examine changes and available taxation measures across 2020–2026.</p></div></div>
+<div class="col-md-4"><div class="card-lite"><h3>Tools & Technologies</h3><p class="mb-0">Tableau Public, HTML, CSS, Bootstrap, and Flask.</p></div></div>
+</div>
+<div class="callout mt-4"><strong>Why this project matters:</strong> Fuel prices influence household expenses, transportation costs, business operations, and the cost of moving goods. Visual comparisons help viewers explore patterns and ask informed questions about the factors behind them.</div>
+</div></section>
+
+<section id="objectives" class="bg-white"><div class="container">
+<h2 class="heading">Project Objectives</h2><p class="muted section-intro mb-4">The project turns a broad topic into visual questions that can be explored through charts and comparisons.</p>
+<div class="row g-3">
+<div class="col-md-6 col-lg-4"><div class="card-lite"><span class="number-pill">01</span><h3>Compare countries</h3><p>Explore how displayed fuel prices differ among countries included in the published view.</p></div></div>
+<div class="col-md-6 col-lg-4"><div class="card-lite"><span class="number-pill">02</span><h3>Explore time trends</h3><p>Investigate how values vary during the 2020–2026 analysis period, where the data supports it.</p></div></div>
+<div class="col-md-6 col-lg-4"><div class="card-lite"><span class="number-pill">03</span><h3>Review taxation</h3><p>Examine taxation measures represented in the source data and their context for price comparisons.</p></div></div>
+<div class="col-md-6 col-lg-4"><div class="card-lite"><span class="number-pill">04</span><h3>Improve accessibility</h3><p>Present information in interactive visuals that are easier to navigate than large raw tables.</p></div></div>
+<div class="col-md-6 col-lg-4"><div class="card-lite"><span class="number-pill">05</span><h3>Encourage exploration</h3><p>Allow viewers to inspect charts and use available Tableau controls to explore published information.</p></div></div>
+<div class="col-md-6 col-lg-4"><div class="card-lite"><span class="number-pill">06</span><h3>Communicate findings</h3><p>Use a dashboard and story format to organize the analysis and guide the viewer.</p></div></div></div></div></section>
+
+<section id="methodology"><div class="container">
+<h2 class="heading">Methodology and Workflow</h2><p class="muted section-intro mb-4">The website provides a presentation layer for the Tableau work. These are typical stages for this type of analysis; exact calculations depend on the dataset and workbook.</p>
+<div class="row g-4">
+<div class="col-md-6"><div class="card-lite"><span class="number-pill">1</span><h3>Data preparation</h3><p>Review country names, time periods, price values, and taxation measures. Check for missing values, inconsistent labels, and incompatible units.</p></div></div>
+<div class="col-md-6"><div class="card-lite"><span class="number-pill">2</span><h3>Analysis design</h3><p>Define questions the data can answer, such as how displayed values differ across countries or change over time.</p></div></div>
+<div class="col-md-6"><div class="card-lite"><span class="number-pill">3</span><h3>Visual development</h3><p>Build charts in Tableau with clear titles, labels, units, and time ranges so viewers can interpret comparisons.</p></div></div>
+<div class="col-md-6"><div class="card-lite"><span class="number-pill">4</span><h3>Dashboard and story</h3><p>Arrange related visualizations in a dashboard and use the story to guide viewers through the selected comparison.</p></div></div>
+<div class="col-md-6"><div class="card-lite"><span class="number-pill">5</span><h3>Web integration</h3><p>Embed the published Tableau views in this responsive HTML page and provide direct links if embedding is unavailable.</p></div></div>
+<div class="col-md-6"><div class="card-lite"><span class="number-pill">6</span><h3>Review and validation</h3><p>Check that views open, labels remain readable on mobile and desktop, and conclusions match the workbook.</p></div></div></div></div></section>
+
+<section id="dashboard"><div class="container">
+<h2 class="heading">Interactive Dashboard</h2>
+<p class="muted mb-4">If the embed stays blank, use “Open dashboard on Tableau Public” below. A persistent spinner usually means the published view URL is unavailable or not publicly accessible.</p>
+<div class="viz-card">
+<iframe class="viz-frame" title="Global Fuel Prices and Taxation Trends dashboard" loading="lazy" allowfullscreen
+src="https://public.tableau.com/views/GlobalAverageFuelPricesTrend2020-2026Dashboard_17931005793520/FuelPriceComparison-Top3Countriesstory?:showVizHome=no&:embed=true&:toolbar=yes"></iframe>
+<div class="viz-actions"><a class="btn btn-green" target="_blank" rel="noopener noreferrer" href="https://public.tableau.com/views/GlobalAverageFuelPricesTrend2020-2026Dashboard_17931005793520/FuelPriceComparison-Top3Countriesstory">Open dashboard on Tableau Public</a></div>
+</div></div></section>
+
+<section id="story"><div class="container">
+<h2 class="heading">Tableau Story: Fuel Price Comparison – Top 3 Countries</h2>
+<p class="muted mb-4">This story is intended to guide viewers through a focused comparison of selected countries.</p>
+<div class="viz-card">
+<iframe class="viz-frame" title="Fuel Price Comparison - Top 3 Countries Tableau story" loading="lazy" allowfullscreen
+src="https://public.tableau.com/views/GlobalAverageFuelPricesTrend2020-2026Story_17930994690350/FuelPriceComparison-Top3Countriesstory?:showVizHome=no&:embed=true&:toolbar=yes"></iframe>
+<div class="viz-actions"><a class="btn btn-green" target="_blank" rel="noopener noreferrer" href="https://public.tableau.com/views/GlobalAverageFuelPricesTrend2020-2026Story_17930994690350/FuelPriceComparison-Top3Countriesstory">Open story on Tableau Public</a></div>
+</div></div></section>
+<section id="insights" class="bg-white"><div class="container">
+<h2 class="heading">How to Read the Analysis</h2><p class="muted section-intro mb-4">Use these prompts while exploring the dashboard and story. They are questions to investigate, not unverified claims about results.</p>
+<div class="row g-3">
+<div class="col-md-6"><div class="card-lite"><h3>Country comparison</h3><p>Which countries appear at the top of the comparison? Check the chart title, units, selected period, and filters before interpreting the ranking.</p></div></div>
+<div class="col-md-6"><div class="card-lite"><h3>Change over time</h3><p>Look for increases, decreases, and volatility. Compare equivalent dates and do not assume a change is caused by one factor alone.</p></div></div>
+<div class="col-md-6"><div class="card-lite"><h3>Taxation context</h3><p>Review field definitions and units. Tax structures, subsidies, exchange rates, and market conditions can differ across countries.</p></div></div>
+<div class="col-md-6"><div class="card-lite"><h3>Use the story</h3><p>Follow the story sequence for a guided comparison, then use the dashboard for broader exploration.</p></div></div></div>
+<div class="callout mt-4"><strong>Interpretation reminder:</strong> Association does not prove causation. Verify the underlying data, definitions, time range, and source notes before presenting numerical conclusions.</div>
+</div></section>
+
+<section id="limitations"><div class="container"><h2 class="heading">Scope, Limitations, and Future Improvements</h2>
+<div class="row g-3">
+<div class="col-lg-6"><div class="card-lite"><h3>Project scope</h3><p>This page presents the Global Fuel Prices and Taxation Trends project, focusing on the published top-three-country comparison and accompanying Tableau views.</p><p class="mb-0">The website is a presentation layer; the visualizations and measures are controlled by the published Tableau workbook.</p></div></div>
+<div class="col-lg-6"><div class="card-lite"><h3>Limitations</h3><ul class="mb-0"><li>Results depend on the source dataset's completeness and consistency.</li><li>Countries may use different reporting practices or units.</li><li>Embedded views require Tableau Public and internet access.</li><li>Published URLs or permissions may change independently.</li></ul></div></div>
+<div class="col-lg-6"><div class="card-lite"><h3>Future improvements</h3><ul class="mb-0"><li>Add dataset citations and field definitions.</li><li>Document data-cleaning and calculation choices.</li><li>Add accessible descriptions for key charts.</li><li>Test embeds across devices and browsers.</li></ul></div></div>
+<div class="col-lg-6"><div class="card-lite"><h3>Technology stack</h3><p class="mb-0">HTML structures the page, CSS styles content, Bootstrap supports responsive layout, and Tableau Public delivers interactive visuals. Flask can provide a server layer when deployed as a Flask application.</p></div></div></div></div></section>
+</main>
+<footer><div class="container d-flex flex-column flex-md-row justify-content-between gap-2"><span>© 2026 <strong>Jaisal Gohar</strong></span><span>Global Fuel Prices and Taxation Trends (2020–2026)</span></div></footer>
+<a href="#top" class="btn btn-green back-top" aria-label="Back to top" title="Back to top">↑</a>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
